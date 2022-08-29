@@ -1,0 +1,17 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+.icon {
+  font-size: 1.5rem;
+  padding: 15px 3px 0;
+  color: black;
+  cursor: pointer;
+}
+
+.crypto_heading {
+  font-size: 2rem;
+}
