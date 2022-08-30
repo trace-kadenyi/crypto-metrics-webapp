@@ -12,7 +12,7 @@ const Home = ({
       <img className="logo" src={logo} alt={name} />
     </div>
     <div>
-      <NavLink to={`details/${id}`}><FaLongArrowAltRight /></NavLink>
+      <NavLink className="arrow" to={`details/${id}`}><FaLongArrowAltRight /></NavLink>
     </div>
     <div className="content">
       <h5 className="name">
