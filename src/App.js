@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navigation from './Components/Navigation/Navigation';
 import MainList from './Components/Homepage/MainList';
-import Details from './Components/Homepage/Details';
+import Details from './Components/Details/Details';
 
 const App = () => (
   <Router>
