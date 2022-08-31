@@ -5,9 +5,11 @@
 
 .main_list {
   display: grid;
-  gap: 1px;
   grid-template-columns: repeat(auto-fit, minmax(165px, 1fr));
-  background-color: rgb(217, 59, 154);
+}
+
+.not_found {
+  color: black;
 }
 
 .search_bar {
@@ -53,6 +55,10 @@ p {
   font-size: 15px;
 }
 
+.home_list:nth-child(odd) {
+  background-color: rgb(217, 59, 154);
+}
+
 .home_list:nth-child(even) {
   background-color: rgb(201, 46, 139);
 }
@@ -70,6 +76,7 @@ p {
 
   .home_list {
     height: 150px;
+    max-width: 500px;
   }
 
   .logo {

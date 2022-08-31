@@ -1,9 +1,10 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux/es/exports';
 import { fetchCryptoData, selectCryptoData } from '../../redux/cryptoData.redux';
 import Home from './Home';
 
 const MainList = () => {
+  const [search, setSearch] = useState('');
   const dispatch = useDispatch();
   const crypto = useSelector(selectCryptoData);
 
@@ -11,10 +12,15 @@ const MainList = () => {
     dispatch(fetchCryptoData());
   }, [dispatch]);
 
+  const filtered = crypto.filter((item) => item.name.toLowerCase().includes(search.toLowerCase()));
+
   return (
     <div>
+      <div className="search_bar">
+        <input className="search" type="text" placeholder="Search" onChange={(e) => setSearch(e.target.value)} />
+      </div>
       <ul className="main_list">
-        {crypto.map((item) => (
+        {filtered.map((item) => (
           <Home
             key={item.id}
             id={item.id}
