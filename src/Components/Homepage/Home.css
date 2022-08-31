@@ -6,10 +6,7 @@
 .main_list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(165px, 1fr));
-}
-
-.not_found {
-  color: black;
+  gap: 1px;
 }
 
 .search_bar {
@@ -41,6 +38,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  border-radius: 8px;
 }
 
 .content {
@@ -60,7 +58,7 @@ p {
 }
 
 .home_list:nth-child(even) {
-  background-color: rgb(201, 46, 139);
+  background-color: rgb(187, 28, 124);
 }
 
 .block {

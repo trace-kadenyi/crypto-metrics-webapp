@@ -3,7 +3,7 @@ import axios from 'axios';
 
 const FETCH_DATA = 'crypto-metrics-webapp/cryptoData.redux/FETCH_DATA';
 const BASE_URL = 'https://api.nomics.com/v1/currencies/ticker?key=f4cdb994cd1b7d5758037615a32b7d1b0a7aa743&interval=1d,7d&convert=EUR';
-const initialState = [];
+export const initialState = [];
 
 const cryptoReducer = (state = initialState, action) => {
   switch (action.type) {

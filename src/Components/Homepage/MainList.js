@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useSelector, useDispatch } from 'react-redux/es/exports';
+import { useSelector, useDispatch } from 'react-redux';
 import { fetchCryptoData, selectCryptoData } from '../../redux/cryptoData.redux';
 import Home from './Home';
 
