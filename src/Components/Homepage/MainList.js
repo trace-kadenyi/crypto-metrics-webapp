@@ -12,19 +12,15 @@ const MainList = () => {
     dispatch(fetchCryptoData());
   }, [dispatch]);
 
+  const filtered = crypto.filter((item) => item.name.toLowerCase().includes(search.toLowerCase()));
+
   return (
     <div>
       <div className="search_bar">
         <input className="search" type="text" placeholder="Search" onChange={(e) => setSearch(e.target.value)} />
       </div>
       <ul className="main_list">
-        {crypto.filter((item) => {
-          if (search === '') {
-            return item;
-          } if (item.name.toLowerCase().includes(search.toLowerCase()) || item.symbol.toLowerCase().includes(search.toLowerCase()) || item.rank.includes(search)) {
-            return item;
-          }
-        }).map((item) => (
+        {filtered.map((item) => (
           <Home
             key={item.id}
             id={item.id}
