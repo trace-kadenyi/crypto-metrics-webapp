@@ -29,10 +29,12 @@ const Details = () => {
           </h3>
           <p>
             Ranking:
+            {' '}
             {foundItem.rank}
           </p>
           <p>
             Price:
+            {' '}
             {foundItem.price}
           </p>
         </div>
