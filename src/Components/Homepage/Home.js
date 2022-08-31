@@ -8,28 +8,29 @@ const Home = ({
   id, name, symbol, rank, logo, price,
 }) => (
   <li className="home_list">
-    <div>
-      <img className="logo" src={logo} alt={name} />
-    </div>
-    <div>
-      <NavLink className="arrow" to={`details/${id}`}><FaLongArrowAltRight /></NavLink>
+    <div className="block">
+      <div>
+        <img className="logo" src={logo} alt={name} />
+      </div>
+      <div>
+        <NavLink className="arrow" to={`details/${id}`}><FaLongArrowAltRight /></NavLink>
+      </div>
     </div>
     <div className="content">
       <h5 className="name">
         {name}
+        {' '}
         (
         {symbol}
         )
       </h5>
       <p>
-        <strong>No</strong>
-        :
+        <strong>Rank:</strong>
         {' '}
         {rank}
       </p>
       <p>
-        <strong>Price</strong>
-        :
+        <strong>Price:</strong>
         {' '}
         {price}
       </p>
