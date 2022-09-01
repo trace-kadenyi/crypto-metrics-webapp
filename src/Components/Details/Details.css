@@ -1,0 +1,34 @@
+.my_logo {
+  width: 150px;
+}
+
+.intro {
+  background-color: rgb(217, 59, 154);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+li:nth-child(even) {
+  background-color: rgb(187, 28, 124);
+}
+
+.breakdown {
+  background-color: rgb(201, 46, 139);
+  padding: 3px 30px;
+}
+
+.details_list {
+  background-color: rgb(217, 59, 154);
+}
+
+.details_list > * {
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.first_span {
+  font-weight: bold;
+}
