@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { useSelector, useDispatch } from 'react-redux/es/exports';
+import { useSelector, useDispatch } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import { fetchCryptoData, selectCryptoData } from '../../redux/cryptoData.redux';
 import './Details.css';
@@ -16,7 +16,7 @@ const Details = () => {
   const foundItem = crypto.find((item) => item.id === id);
 
   return (
-    <div className="details">
+    <div role="navigation" className="details">
       <div className="intro">
         <img className="my_logo" src={foundItem.logo} alt={foundItem.name} />
         <div>
