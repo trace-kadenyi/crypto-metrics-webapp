@@ -16,7 +16,7 @@ const Home = ({
         <NavLink className="arrow" to={`details/${id}`}><FaLongArrowAltRight /></NavLink>
       </div>
     </div>
-    <div className="content">
+    <div role="list" className="content">
       <h5 className="name">
         {name}
         {' '}
@@ -45,6 +45,6 @@ Home.propTypes = {
   rank: PropTypes.string.isRequired,
   price: PropTypes.string.isRequired,
   id: PropTypes.string.isRequired,
-  logo: PropTypes.string.isRequired,
+  logo: PropTypes.node.isRequired,
 };
 export default Home;
