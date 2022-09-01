@@ -16,7 +16,7 @@
 [Github Pages](https://track92.github.io/crypto-metrics-webapp/)
 
 ## Video Link
-[Preview](https://loom.com/share/af98377757be4abb8208a8c6ec332c99)
+[Preview](https://www.loom.com/share/e9e88fe784034a59a8071898d4377bd4)
 
 ## Getting started
 
