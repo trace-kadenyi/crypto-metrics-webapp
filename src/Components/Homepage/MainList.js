@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchCryptoData, selectCryptoData } from '../../redux/cryptoData.redux';
-import Home from './Home';
+import Home from './home';
 
 const MainList = () => {
   const [search, setSearch] = useState('');
