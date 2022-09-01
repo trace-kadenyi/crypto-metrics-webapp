@@ -3,7 +3,7 @@ import { Provider } from 'react-redux';
 import renderer from 'react-test-renderer';
 import { BrowserRouter as Router } from 'react-router-dom';
 import store from '../redux/configureStore';
-import MainList from '../Components/HomePage/mainList';
+import MainList from '../Components/Homepage/MainList';
 
 describe('test MainList component', () => {
   test('MainList should be in the document', () => {
