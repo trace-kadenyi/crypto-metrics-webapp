@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/crypto-metrics-webapp/static/css/main.4a51708d.css",
+    "main.js": "/crypto-metrics-webapp/static/js/main.f035a496.js",
+    "index.html": "/crypto-metrics-webapp/index.html",
+    "main.4a51708d.css.map": "/crypto-metrics-webapp/static/css/main.4a51708d.css.map",
+    "main.f035a496.js.map": "/crypto-metrics-webapp/static/js/main.f035a496.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4a51708d.css",
+    "static/js/main.f035a496.js"
+  ]
+}
