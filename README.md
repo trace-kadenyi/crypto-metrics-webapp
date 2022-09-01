@@ -11,7 +11,9 @@
 - Library/Framework: Reactjs | Redux | Jest 
 
 ## Live Demo
-[Live Demo Link](https://papaya-sunburst-a9d343.netlify.app/)
+[Netlify](https://papaya-sunburst-a9d343.netlify.app/)
+[Heroku](https://react-capstone-project1.herokuapp.com/)
+[Github Pages](https://track92.github.io/crypto-metrics-webapp/)
 
 ## Video Link
 [Preview](https://loom.com/share/af98377757be4abb8208a8c6ec332c99)
