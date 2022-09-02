@@ -49,6 +49,9 @@ const MainList = () => {
           />
         ))}
       </ul>
+      <footer>
+        <h5><a href="https://nomics.com" target="_blank" rel="noreferrer">Crypto Market Cap & Pricing Data Provided By Nomics</a></h5>
+      </footer>
     </div>
   );
 };
