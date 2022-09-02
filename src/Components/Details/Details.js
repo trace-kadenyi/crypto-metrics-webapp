@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import { fetchCryptoData, selectCryptoData } from '../../redux/cryptoData.redux';
+import icon from '../../fuse.png';
 import './Details.css';
 
 const Details = () => {
@@ -18,7 +19,7 @@ const Details = () => {
   return (
     <div role="navigation" className="details">
       <div className="intro">
-        <img className="my_logo" src={foundItem.logo} alt={foundItem.name} />
+        {foundItem.name === 'Fuse-6 sOHM' ? (<img className="my_logo" src={icon} alt="fuse" />) : (<img className="my_logo" src={foundItem.logo} alt={foundItem.name} />)}
         <div>
           <h3>
             {foundItem.name}
@@ -44,64 +45,32 @@ const Details = () => {
       </div>
       <ul className="details_list">
         <li>
-          <span className="first_span">Price date</span>
-          <span>{foundItem.price_date}</span>
+          <span className="first_span">Volume</span>
+          <span>{foundItem.volume}</span>
         </li>
         <li>
-          <span className="first_span">Price time</span>
-          <span>{foundItem.price_timestamp}</span>
+          <span className="first_span">Total Supply</span>
+          <span>{foundItem.totalSupply}</span>
         </li>
         <li>
-          <span className="first_span">Circulating supply</span>
-          <span>{foundItem.circulating_supply}</span>
+          <span className="first_span">Price change (1h)</span>
+          <span>{foundItem.priceChange1h}</span>
         </li>
         <li>
-          <span className="first_span">Market cap</span>
-          <span>{foundItem.market_cap}</span>
+          <span className="first_span">Price change (1d)</span>
+          <span>{foundItem.priceChange1d}</span>
         </li>
         <li>
-          <span className="first_span">Num exchanges</span>
-          <span>{foundItem.num_exchanges}</span>
+          <span className="first_span">Price change (1w)</span>
+          <span>{foundItem.priceCHange1w}</span>
         </li>
         <li>
-          <span className="first_span">Num pairs</span>
-          <span>{foundItem.num_pairs}</span>
+          <span className="first_span">Decimals</span>
+          <span>{foundItem.decimals}</span>
         </li>
         <li>
-          <span className="first_span">Num pairs unmapped</span>
-          <span>{foundItem.num_pairs_unmapped}</span>
-        </li>
-        <li>
-          <span className="first_span">First candle</span>
-          <span>{foundItem.first_candle}</span>
-        </li>
-        <li>
-          <span className="first_span">First trade</span>
-          <span>{foundItem.first_trade}</span>
-        </li>
-        <li>
-          <span className="first_span">First order book</span>
-          <span>{foundItem.first_order_book}</span>
-        </li>
-        <li>
-          <span className="first_span">Rank delta</span>
-          <span>{foundItem.rank_delta}</span>
-        </li>
-        <li>
-          <span className="first_span">High</span>
-          <span>{foundItem.high}</span>
-        </li>
-        <li>
-          <span className="first_span">High timestamp</span>
-          <span>{foundItem.high_timestamp}</span>
-        </li>
-        <li>
-          <span className="first_span">Daily price change</span>
-          <span>{foundItem['1d'].price_change}</span>
-        </li>
-        <li>
-          <span className="first_span">Weekly Price phange</span>
-          <span>{foundItem['7d'].price_change}</span>
+          <span className="first_span">PriceBtc</span>
+          <span>{foundItem.priceBtc}</span>
         </li>
       </ul>
     </div>

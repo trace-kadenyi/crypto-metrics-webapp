@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
 import { FaLongArrowAltRight } from 'react-icons/fa';
+import icon from '../../fuse.png';
 import './Home.css';
 
 const Home = ({
@@ -10,7 +11,7 @@ const Home = ({
   <li className="home_list">
     <div className="block">
       <div>
-        <img className="logo" src={logo} alt={name} />
+        {name === 'Fuse-6 sOHM' ? (<img className="logo" src={icon} alt="fuse" />) : (<img className="logo" src={logo} alt="logo" />)}
       </div>
       <div>
         <NavLink className="arrow" to={`details/${id}`}><FaLongArrowAltRight /></NavLink>
@@ -42,8 +43,8 @@ const Home = ({
 Home.propTypes = {
   name: PropTypes.string.isRequired,
   symbol: PropTypes.string.isRequired,
-  rank: PropTypes.string.isRequired,
-  price: PropTypes.string.isRequired,
+  rank: PropTypes.number.isRequired,
+  price: PropTypes.number.isRequired,
   id: PropTypes.string.isRequired,
   logo: PropTypes.node.isRequired,
 };

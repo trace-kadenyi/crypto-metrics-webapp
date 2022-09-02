@@ -79,6 +79,10 @@ footer a:hover {
   color: rgb(201, 46, 139);
 }
 
+footer p {
+  letter-spacing: 0.1rem;
+}
+
 .block {
   width: 100%;
   display: flex;

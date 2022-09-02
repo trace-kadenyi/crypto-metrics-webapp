@@ -9,7 +9,9 @@ const MainList = () => {
   const crypto = useSelector(selectCryptoData);
 
   useEffect(() => {
-    dispatch(fetchCryptoData());
+    if (crypto.length === 0) {
+      dispatch(fetchCryptoData());
+    }
   }, [dispatch]);
 
   const filtered = crypto.filter((item) => item.name.toLowerCase().includes(search.toLowerCase()));
@@ -30,27 +32,23 @@ const MainList = () => {
             rank={item.rank}
             logo={item.logo}
             price={item.price}
-            price_date={item.price_date}
-            price_timestamp={item.price_timestamp}
-            circulating_supply={item.circulating_supply}
-            max_supply={item.max_supply}
-            market_cap={item.market_cap}
-            num_exchanges={item.num_exchanges}
-            num_pairs={item.num_pairs}
-            num_pairs_unmapped={item.num_pairs_unmapped}
-            first_candle={item.first_candle}
-            first_trade={item.first_trade}
-            first_order_book={item.first_order_book}
-            rank_delta={item.rank_delta}
-            high={item.high}
-            high_timestamp={item.high_timestamp}
-            one_day={item['1d']}
-            seven_day={item['7d']}
+            volume={item.volume}
+            totalSupply={item.totalSupply}
+            priceChange1h={item.priceChange1h}
+            priceChange1d={item.priceChange1d}
+            priceChange1w={item.priceChange1w}
+            decimals={item.decimals}
+            availableSupply={item.availableSupply}
+            contractAddress={item.contractAddress}
+            priceBtc={item.priceBtc}
           />
         ))}
       </ul>
       <footer>
-        <h5><a href="https://nomics.com" target="_blank" rel="noreferrer">Crypto Market Cap & Pricing Data Provided By Nomics</a></h5>
+        <p>
+          Copyright &copy;
+          {new Date().getFullYear()}
+        </p>
       </footer>
     </div>
   );
