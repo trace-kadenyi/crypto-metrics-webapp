@@ -61,6 +61,24 @@ p {
   background-color: rgb(187, 28, 124);
 }
 
+footer {
+  background-color: black;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer a {
+  color: white;
+  text-decoration-color: rgb(201, 46, 139);
+  text-decoration-thickness: 2px;
+}
+
+footer a:hover {
+  color: rgb(201, 46, 139);
+}
+
 .block {
   width: 100%;
   display: flex;
