@@ -12,8 +12,6 @@
 
 ## Live Demo
 - [Netlify](https://papaya-sunburst-a9d343.netlify.app/)
-- [Heroku](https://react-capstone-project1.herokuapp.com/)
-- [Github Pages](https://track92.github.io/crypto-metrics-webapp/)
 
 ## Video Link
 [Preview](https://loom.com/share/61b281634f3345aaab7bfd904d8eb49b)
