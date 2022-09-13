@@ -15,7 +15,7 @@ const MainList = () => {
   const filtered = crypto.filter((item) => item.name.toLowerCase().includes(search.toLowerCase()));
 
   return (
-    <div>
+    <div className="main_section">
       <div className="search_bar">
         <input className="search" type="text" placeholder="Search" onChange={(e) => setSearch(e.target.value)} />
       </div>

@@ -1,26 +1,25 @@
 .my_logo {
   width: 150px;
+  background-color: rgb(7, 44, 68);
+  border-radius: 50%;
 }
 
 .intro {
-  background-color: rgb(217, 59, 154);
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
 }
 
-li:nth-child(even) {
-  background-color: rgb(187, 28, 124);
+.details_list li {
+  border-bottom: 1px rgb(7, 44, 68) solid;
 }
 
 .breakdown {
-  background-color: rgb(201, 46, 139);
   padding: 3px 30px;
-}
-
-.details_list {
-  background-color: rgb(217, 59, 154);
+  text-decoration: underline;
+  text-decoration-thickness: 5px;
+  text-decoration-color: rgb(7, 44, 68);
 }
 
 .details_list > * {
