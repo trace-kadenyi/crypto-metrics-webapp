@@ -1,17 +1,17 @@
 .logo {
   width: 60px;
   height: 60px;
+  background-color: rgb(1, 18, 31);
+  border-radius: 50%;
 }
 
 .main_list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(165px, 1fr));
-  gap: 1px;
 }
 
 .search_bar {
   height: 220px;
-  background-color: rgb(201, 46, 139);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -39,6 +39,7 @@
   justify-content: space-between;
   align-items: center;
   border-radius: 8px;
+  border: 1px rgb(7, 44, 68) solid;
 }
 
 .content {
@@ -53,16 +54,7 @@ p {
   font-size: 15px;
 }
 
-.home_list:nth-child(odd) {
-  background-color: rgb(217, 59, 154);
-}
-
-.home_list:nth-child(even) {
-  background-color: rgb(187, 28, 124);
-}
-
 footer {
-  background-color: black;
   height: 80px;
   display: flex;
   align-items: center;
@@ -71,12 +63,14 @@ footer {
 
 footer a {
   color: white;
-  text-decoration-color: rgb(201, 46, 139);
+  text-decoration-color: rgb(7, 44, 68);
   text-decoration-thickness: 2px;
 }
 
 footer a:hover {
-  color: rgb(201, 46, 139);
+  color: aliceblue;
+  font-weight: bolder;
+  letter-spacing: 0.2rem;
 }
 
 .block {

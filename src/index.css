@@ -9,6 +9,8 @@ body {
   box-sizing: border-box;
   font-family: 'Lato', sans-serif;
   color: white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./assets/images/1.webp');
+  background-position: center;
 }
 
 ul {
