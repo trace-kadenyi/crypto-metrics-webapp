@@ -23,9 +23,6 @@
 ## Live Demo
 - [CRYPTO METRICS WEBAPP LIVE](https://papaya-sunburst-a9d343.netlify.app/)
 
-## Video Link
-[Preview](https://loom.com/share/61b281634f3345aaab7bfd904d8eb49b)
-
 ## Getting started
 
 #### Clone this repository
