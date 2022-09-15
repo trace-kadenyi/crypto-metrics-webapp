@@ -6,39 +6,42 @@ import './Home.css';
 
 const Home = ({
   id, name, symbol, rank, logo, price,
-}) => (
-  <li className="home_list">
-    <div className="block">
-      <div>
-        <img className="logo" src={logo} alt={name} />
+}) => {
+// select certain names from the list of coins
+  const darkLogos = ['Polkadot', 'ECOMI', 'Fantom', 'Stellar'];
+  return (
+    <li className="home_list">
+      <div className="block">
+        <div>
+          <img className={darkLogos.includes(name) ? 'logo blurry_logo' : 'logo'} src={logo} alt={name} />
+        </div>
+        <div>
+          <NavLink className="arrow" to={`details/${id}`}><FaLongArrowAltRight /></NavLink>
+        </div>
       </div>
-      <div>
-        <NavLink className="arrow" to={`details/${id}`}><FaLongArrowAltRight /></NavLink>
+      <div role="list" className="content">
+        <h5 className="name">
+          {name}
+          {' '}
+          (
+          {symbol}
+          )
+        </h5>
+        <p>
+          <strong>Rank:</strong>
+          {' '}
+          {rank}
+        </p>
+        <p>
+          <strong>Price:</strong>
+          {' '}
+          {price}
+        </p>
       </div>
-    </div>
-    <div role="list" className="content">
-      <h5 className="name">
-        {name}
-        {' '}
-        (
-        {symbol}
-        )
-      </h5>
-      <p>
-        <strong>Rank:</strong>
-        {' '}
-        {rank}
-      </p>
-      <p>
-        <strong>Price:</strong>
-        {' '}
-        {price}
-      </p>
-    </div>
 
-  </li>
-);
-
+    </li>
+  );
+};
 Home.propTypes = {
   name: PropTypes.string.isRequired,
   symbol: PropTypes.string.isRequired,

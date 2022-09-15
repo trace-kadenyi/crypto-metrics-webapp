@@ -15,10 +15,12 @@ const Details = () => {
   const { id } = useParams();
   const foundItem = crypto.find((item) => item.id === id);
 
+  const darkLogos = ['Polkadot', 'ECOMI', 'Fantom', 'Stellar'];
+
   return (
     <div role="navigation" className="details">
       <div className="intro">
-        <img className="my_logo" src={foundItem.logo} alt={foundItem.name} />
+        <img className={darkLogos.includes(foundItem.name) ? 'my_logo my_blurry_logo' : 'my_logo'} src={foundItem.logo} alt={foundItem.name} />
         <div>
           <h3>
             {foundItem.name}

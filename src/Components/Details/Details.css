@@ -1,7 +1,10 @@
 .my_logo {
   width: 150px;
-  background-color: rgb(7, 44, 68);
   border-radius: 50%;
+}
+
+.my_blurry_logo {
+  background-color: white;
 }
 
 .intro {
