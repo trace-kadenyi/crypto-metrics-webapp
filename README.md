@@ -21,7 +21,7 @@
 
 
 ## Live Demo
-- [CRYPTO METRICS WEBAPP LIVE](https://cryptocurrency-metrics.netlify.app/)
+- [CRYPTO METRICS WEBAPP LIVE](https://papaya-sunburst-a9d343.netlify.app/)
 
 ## Getting started
 
